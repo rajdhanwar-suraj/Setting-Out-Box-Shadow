@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.App{
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    align-items: center;
+}
+.box{
+    width: 40vw;
+    height: 50vh;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+.controls{
+    width: 40vw;
+}
+.controls input{
+    width: 100%;
+}
+
+@media(max-width:500px){
+    .App{
+        flex-direction: column-reverse;
+        
+    }
+    .box{
+        width: 60vw;
+        height: 30vh;
+        padding: 0 5%;
+    }
+    .controls{
+        width: 70vw;
+    }
+    .controls div{
+        margin: 2px !important;
+    }
+}
